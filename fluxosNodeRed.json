@@ -1,0 +1,1128 @@
+[
+    {
+        "id": "b766e2f2fd71b5a7",
+        "type": "tab",
+        "label": "Projeto_IoT_Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "37087ae17f1d05e6",
+        "type": "tab",
+        "label": "Projeto_IoT_Relatorio",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6346abe230d91664",
+        "type": "ui_spacer",
+        "z": "b766e2f2fd71b5a7",
+        "name": "spacer",
+        "group": "ef1bb4a165d7b155",
+        "order": 3,
+        "width": "12",
+        "height": "1"
+    },
+    {
+        "id": "3bfb450deed015e3",
+        "type": "ui_spacer",
+        "z": "b766e2f2fd71b5a7",
+        "name": "spacer",
+        "group": "ef1bb4a165d7b155",
+        "order": 1,
+        "width": "12",
+        "height": "1"
+    },
+    {
+        "id": "4ccdde19afe420ab",
+        "type": "ui_spacer",
+        "z": "b766e2f2fd71b5a7",
+        "name": "spacer",
+        "group": "ef1bb4a165d7b155",
+        "order": 5,
+        "width": "12",
+        "height": "1"
+    },
+    {
+        "id": "27ceb19baeef29fb",
+        "type": "mqtt-broker",
+        "name": "BlokerMQTT",
+        "broker": "168.138.132.8",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dac8ba189e150c9c",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "Eu"
+    },
+    {
+        "id": "33158d9c64c2fcb7",
+        "type": "ui_group",
+        "name": "GrupoDireita",
+        "tab": "0b0a2859b8cb4960",
+        "order": 2,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef1bb4a165d7b155",
+        "type": "ui_group",
+        "name": "GrupoEsquerda",
+        "tab": "0b0a2859b8cb4960",
+        "order": 1,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0b0a2859b8cb4960",
+        "type": "ui_tab",
+        "name": "Dashboard DataCenter",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4a7ca69835d4f901",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#0080ff",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#0080ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0080ff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#4da6ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0080ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1ce68f9eca4b12e7",
+        "type": "mongodb4-client",
+        "name": "",
+        "protocol": "mongodb+srv",
+        "hostname": "cluster0.1webjja.mongodb.net/",
+        "port": "",
+        "dbName": "leiturasdb",
+        "appName": "",
+        "authSource": "",
+        "authMechanism": "PLAIN",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "e2bc7ac9aa77279e",
+        "type": "mongodb4-client",
+        "name": "simple connection",
+        "protocol": "mongodb",
+        "hostname": "localhost",
+        "port": "",
+        "dbName": "nodered",
+        "authSource": "nodered",
+        "authMechanism": "SCRAM-SHA-256",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsInsecure": false,
+        "uri": "",
+        "advanced": "{\"connectTimeoutMS\": 30000}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "dd0b7f14421d961d",
+        "type": "mongodb4-client",
+        "name": "advanced connection",
+        "protocol": "mongodb",
+        "hostname": "",
+        "port": "",
+        "dbName": "nodered",
+        "authSource": "nodered",
+        "authMechanism": "SCRAM-SHA-256",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsInsecure": false,
+        "uri": "mongodb://localhost:27017",
+        "advanced": "",
+        "uriTabActive": "tab-uri-advanced"
+    },
+    {
+        "id": "0fdae212086cc3ae",
+        "type": "mongodb4-client",
+        "name": "leiturasdb",
+        "protocol": "mongodb+srv",
+        "hostname": "cluster0.1webjja.mongodb.net/",
+        "port": "",
+        "dbName": "leiturasdb",
+        "appName": "",
+        "authSource": "",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "f6fd1a3ac8ae639d",
+        "type": "ui_tab",
+        "name": "Relatório DataCenter",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ef730c02a38e4ef3",
+        "type": "ui_group",
+        "name": "GeralRelatorio",
+        "tab": "f6fd1a3ac8ae639d",
+        "order": 1,
+        "disp": false,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2b4ee1a6422588ef",
+        "type": "ui_spacer",
+        "z": "37087ae17f1d05e6",
+        "name": "spacer",
+        "group": "ef730c02a38e4ef3",
+        "order": 2,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "c06462dad2b8da74",
+        "type": "telegram bot",
+        "botname": "projeto_iot_datacenter_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "none",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "0b6c63b2afa33985",
+        "type": "mqtt in",
+        "z": "b766e2f2fd71b5a7",
+        "name": "",
+        "topic": "dca/sensores",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "27ceb19baeef29fb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [
+                "b12514993781159f",
+                "af84f4d68cd27fe7",
+                "77f0f3c34b88762b",
+                "620591d3ba414b67",
+                "4c9b853d1781b8bc"
+            ]
+        ]
+    },
+    {
+        "id": "4c9b853d1781b8bc",
+        "type": "trigger",
+        "z": "b766e2f2fd71b5a7",
+        "name": "estaOffline",
+        "op1": "false",
+        "op2": "true",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "3",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": ": Object",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "e442f950342d6014",
+                "245a5ffee3132f15",
+                "33742bda975d1254"
+            ]
+        ]
+    },
+    {
+        "id": "6863409f16727248",
+        "type": "switch",
+        "z": "b766e2f2fd71b5a7",
+        "name": "mensagemValida",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Verifique o datacenter:",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 100,
+        "wires": [
+            [
+                "8b1ea79c64a5e161",
+                "115348727d4129f2"
+            ]
+        ]
+    },
+    {
+        "id": "620591d3ba414b67",
+        "type": "function",
+        "z": "b766e2f2fd71b5a7",
+        "name": "alertaWhatsAppEmail",
+        "func": "const local= msg.payload.local;\nconst dataHora= msg.payload.dataHora;\nconst temp= msg.payload.temp;\nconst umi= msg.payload.umi;\n\n/**Valores de alerta de umidade, para mandar a mensagem**/\nconst minUmiPerigo = 20;\nconst maxUmiPerigo = 80;\n/**Valores de alerta de temperatura, para mandar a mensagem**/\nconst minTempPerigo = 18;\nconst maxTempPerigo = 27;\n\n if ((umi < minUmiPerigo) || (umi > maxUmiPerigo) || (temp < minTempPerigo) || (temp > maxTempPerigo)) {\n      msg.payload = \"Verifique o datacenter: \"+ local +\"\\nHorário da leitura: \" +dataHora+ \"\\nTemperatura: \"+ temp +\n      \"°C\\nUmidade: \"+ umi +\"%\";\n    }\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "6863409f16727248"
+            ]
+        ]
+    },
+    {
+        "id": "3ceaf1d91e63ad56",
+        "type": "e-mail",
+        "z": "b766e2f2fd71b5a7",
+        "server": "smtp.gmail.com",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "giovani01@hotmail.com",
+        "dname": "enviaEmail",
+        "x": 1170,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8b1ea79c64a5e161",
+        "type": "change",
+        "z": "b766e2f2fd71b5a7",
+        "name": "formatarEmail",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Alerta DataCenter A",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 120,
+        "wires": [
+            [
+                "3ceaf1d91e63ad56"
+            ]
+        ]
+    },
+    {
+        "id": "e442f950342d6014",
+        "type": "function",
+        "z": "b766e2f2fd71b5a7",
+        "name": "mensagemOffline",
+        "func": "const offline = msg.payload;\n\nif (offline == true){\n    msg.payload = \"ESP32 offline\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "21aadb31f33588de"
+            ]
+        ]
+    },
+    {
+        "id": "9e90383503183f41",
+        "type": "e-mail",
+        "z": "b766e2f2fd71b5a7",
+        "server": "smtp.gmail.com",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "giovani01@hotmail.com",
+        "dname": "enviaEmail",
+        "x": 1170,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7719bd7bd0c5de22",
+        "type": "change",
+        "z": "b766e2f2fd71b5a7",
+        "name": "formatarEmail",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Alerta DataCenter A",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 220,
+        "wires": [
+            [
+                "9e90383503183f41"
+            ]
+        ]
+    },
+    {
+        "id": "21aadb31f33588de",
+        "type": "switch",
+        "z": "b766e2f2fd71b5a7",
+        "name": "mensagemValida",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "ESP32",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 180,
+        "wires": [
+            [
+                "7719bd7bd0c5de22",
+                "1ed6c5a7d09230bb",
+                "eecaf7ecb3f19d1d"
+            ]
+        ]
+    },
+    {
+        "id": "3bc7e58b862e575e",
+        "type": "ui_gauge",
+        "z": "b766e2f2fd71b5a7",
+        "name": "Temperatura",
+        "group": "33158d9c64c2fcb7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "40",
+        "colors": [
+            "#00ffff",
+            "#00ff00",
+            "#ff0000"
+        ],
+        "seg1": "18",
+        "seg2": "27",
+        "diff": false,
+        "className": "",
+        "x": 530,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e484acac23b15b2f",
+        "type": "ui_gauge",
+        "z": "b766e2f2fd71b5a7",
+        "name": "Umidade",
+        "group": "33158d9c64c2fcb7",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ffff00",
+            "#00ff00",
+            "#ff0000"
+        ],
+        "seg1": "40",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 520,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b12514993781159f",
+        "type": "function",
+        "z": "b766e2f2fd71b5a7",
+        "name": "jsonToTemp",
+        "func": "const temp= msg.payload.temp;\n\nmsg.payload = temp;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "3bc7e58b862e575e",
+                "2c4acd1506b9305d"
+            ]
+        ]
+    },
+    {
+        "id": "af84f4d68cd27fe7",
+        "type": "function",
+        "z": "b766e2f2fd71b5a7",
+        "name": "jsonToUmi",
+        "func": "const umi= msg.payload.umi;\n\nmsg.payload = umi;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "e484acac23b15b2f",
+                "764d41fd56dfb1b4"
+            ]
+        ]
+    },
+    {
+        "id": "2c4acd1506b9305d",
+        "type": "ui_chart",
+        "z": "b766e2f2fd71b5a7",
+        "name": "GraficoTemperatura",
+        "group": "ef1bb4a165d7b155",
+        "order": 2,
+        "width": "10",
+        "height": "6",
+        "label": "Últimas leituras de temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 560,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "764d41fd56dfb1b4",
+        "type": "ui_chart",
+        "z": "b766e2f2fd71b5a7",
+        "name": "GraficoUmidade",
+        "group": "ef1bb4a165d7b155",
+        "order": 4,
+        "width": "10",
+        "height": "6",
+        "label": "Últimas leituras de umidade",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "monotone",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 540,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ed6c5a7d09230bb",
+        "type": "ui_toast",
+        "z": "b766e2f2fd71b5a7",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "PopupOffline",
+        "x": 910,
+        "y": 280,
+        "wires": [
+            []
+        ],
+        "icon": "node-red/alert.svg"
+    },
+    {
+        "id": "33742bda975d1254",
+        "type": "ui_led",
+        "z": "b766e2f2fd71b5a7",
+        "order": 4,
+        "group": "33158d9c64c2fcb7",
+        "width": "5",
+        "height": "3",
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LedStatus",
+        "x": 910,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "245a5ffee3132f15",
+        "type": "ui_text",
+        "z": "b766e2f2fd71b5a7",
+        "group": "33158d9c64c2fcb7",
+        "order": 3,
+        "width": "5",
+        "height": "3",
+        "name": "",
+        "label": "Status do sensor: ",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "20",
+        "color": "#ffffff",
+        "x": 930,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "749e46eef71694b6",
+        "type": "mongodb4",
+        "z": "b766e2f2fd71b5a7",
+        "clientNode": "0fdae212086cc3ae",
+        "mode": "collection",
+        "collection": "leituras",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "insertOne",
+        "x": 660,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "77f0f3c34b88762b",
+        "type": "function",
+        "z": "b766e2f2fd71b5a7",
+        "name": "formataDataInsertOne",
+        "func": "const local= msg.payload.local;\nconst dataHora= msg.payload.dataHora;\nconst temp= msg.payload.temp;\nconst umi= msg.payload.umi;\n\nmsg.payload = {\n  \"local\": local,\n  \"dataHora\": new Date(dataHora), //altera o formato da data e hora para o mesmo do mongodb\n  \"temp\": temp,\n  \"umi\": umi\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 40,
+        "wires": [
+            [
+                "749e46eef71694b6"
+            ]
+        ]
+    },
+    {
+        "id": "bb17e6071d031caa",
+        "type": "telegram sender",
+        "z": "b766e2f2fd71b5a7",
+        "name": "botTelegram",
+        "bot": "c06462dad2b8da74",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eecaf7ecb3f19d1d",
+        "type": "function",
+        "z": "b766e2f2fd71b5a7",
+        "name": "formatarMensagem",
+        "func": "const mensagem = msg.payload\nmsg.payload = {}\nmsg.payload.chatId = 1471194618\nmsg.payload.type = 'message'\nmsg.payload.content = String(mensagem)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 180,
+        "wires": [
+            [
+                "bb17e6071d031caa"
+            ]
+        ]
+    },
+    {
+        "id": "746c89b0dc57c433",
+        "type": "telegram sender",
+        "z": "b766e2f2fd71b5a7",
+        "name": "botTelegram",
+        "bot": "c06462dad2b8da74",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "115348727d4129f2",
+        "type": "function",
+        "z": "b766e2f2fd71b5a7",
+        "name": "formatarMensagem",
+        "func": "const mensagem = msg.payload\nmsg.payload = {}\nmsg.payload.chatId = 1471194618\nmsg.payload.type = 'message'\nmsg.payload.content = String(mensagem)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 80,
+        "wires": [
+            [
+                "746c89b0dc57c433"
+            ]
+        ]
+    },
+    {
+        "id": "7d5fa43c8a98a542",
+        "type": "mongodb4",
+        "z": "37087ae17f1d05e6",
+        "clientNode": "0fdae212086cc3ae",
+        "mode": "collection",
+        "collection": "leituras",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "findAll",
+        "x": 610,
+        "y": 80,
+        "wires": [
+            [
+                "c2aff0c2989ec40f"
+            ]
+        ]
+    },
+    {
+        "id": "moment-node",
+        "type": "moment",
+        "z": "37087ae17f1d05e6",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "America/Sao_Paulo",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "pt_BR",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 280,
+        "y": 80,
+        "wires": [
+            [
+                "c22d4c1f45a2de18"
+            ]
+        ]
+    },
+    {
+        "id": "c22d4c1f45a2de18",
+        "type": "function",
+        "z": "37087ae17f1d05e6",
+        "name": "consultaData",
+        "func": "const dataPesquisada = new Date(msg.payload);\nconst consulta = { \n    dataHora: { $gte: dataPesquisada, \n    $lt: new Date(dataPesquisada.getTime() + 24 * 60 * 60 * 1000) } \n    };\n\nmsg.payload = consulta;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "7d5fa43c8a98a542"
+            ]
+        ]
+    },
+    {
+        "id": "910f3ead848efc3b",
+        "type": "ui_table",
+        "z": "37087ae17f1d05e6",
+        "group": "ef730c02a38e4ef3",
+        "name": "tabelaRelatorio",
+        "order": 3,
+        "width": 30,
+        "height": 14,
+        "columns": [
+            {
+                "field": "local",
+                "title": "Local",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "dataHora",
+                "title": "Horário da leitura",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "temp",
+                "title": "Temperatura",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "umi",
+                "title": "Umidade",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 960,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c2aff0c2989ec40f",
+        "type": "function",
+        "z": "37087ae17f1d05e6",
+        "name": "arrayParaLinhas",
+        "func": "// No Node-RED, no nó function\nif (msg.payload && Array.isArray(msg.payload)) {\n    var dados = msg.payload;\n\n    // Cria um array para armazenar as linhas da tabela\n    var linhasTabela = [];\n\n    // Itera sobre cada objeto no array usando um loop for\n    for (var i = 0; i < dados.length; i++) {\n        var objeto = dados[i];\n        var linha = {\n            \"local\": objeto.local,\n            \"dataHora\": objeto.dataHora,\n            \"temp\": objeto.temp,\n            \"umi\": objeto.umi\n        };\n        linhasTabela.push(linha);\n    }\n\n    // Define o payload como as linhas da tabela\n    msg.payload = linhasTabela;\n} else {\n    // Se o array não existir, define uma mensagem de erro\n    msg.payload = { \"error\": \"Array de dados não encontrado ou não é um array válido.\" };\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 80,
+        "wires": [
+            [
+                "910f3ead848efc3b"
+            ]
+        ]
+    },
+    {
+        "id": "87db8662b86e2d10",
+        "type": "ui_date_picker",
+        "z": "37087ae17f1d05e6",
+        "name": "",
+        "label": "Data:",
+        "group": "ef730c02a38e4ef3",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "moment-node"
+            ]
+        ]
+    }
+]
